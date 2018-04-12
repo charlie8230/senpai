@@ -80,8 +80,8 @@ class Timer {
 
 private:
 
-   typedef std::chrono::time_point<std::chrono::system_clock> time_t;
-   typedef std::chrono::duration<int, std::ratio<1, 1000>> millisecond_t;
+   using time_t std::chrono::time_point<std::chrono::system_clock>;
+   using millisecond_t = std::chrono::duration<int, std::ratio<1, 1000>>;
 
    int p_elapsed;
    bool p_running;
@@ -7142,7 +7142,7 @@ void command(Scanner & scan) {
             name = scan.get_args();
          } else if (part == "value") {
             value = scan.get_args();
-         }	
+         }  
       }
 
       if (false) {
